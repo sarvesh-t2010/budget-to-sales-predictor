@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+	background: #3E2A35;
+	background-size: cover;
+    color: #f0f0f0;
+	
+}
+.title {
+    overflow: hidden;
+    border-right: .15em #444;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s forwards;
+	
+}
+
+.footer p{
+	color: #2d1c1c;
+	font-weight: bold:
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.form-part {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	transition: background 1s, box-shadow 1s;
+	background-color: #E26D5A;
+	color: #333333;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.form-part:hover {
+	box-shadow: 0 0 15px #f5a194, 0 0 30px #f5a194;
+	z-index: 2;
+}
+.submit-btn {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+	font-weight: bold;
+    background: #e05a47;
+    color: #FFF5F2;
+    border-radius: 5px;
+	transition: 0.5s;
+}
+
+.submit-btn:hover {
+	box-shadow: 0 0 10px #ff9980b3, 0 0 20px #ff9980b3, 0 0 30px #ff9980b3;
+	background: #c74839;
+	transform: scale(1.2);
+	z-index: 2;
+}
+
+.prediction h2 {
+	color: #00e676;
+	transition: 0.5s;
+	font-weight: bold;
+}
+
+.prediction h2:hover{
+	text-shadow: 0 0 10px #00e676;
+	transform: scale(1.2);
+	z-index: 2;
+}

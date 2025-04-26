@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budget to Sales Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="title">
+		<h1>Predict Sales from Advertising Budgets</h1>
+	</div>
+
+	<div class = "form-part">
+		<form method="post">
+			<label for="tv_budget">TV Ad Budget ($):</label>
+			<input type="number" name="tv_budget" step="0.01" min="0" required><br><br>
+
+			<label for="radio_budget">Radio Ad Budget ($):</label>
+			<input type="number" name="radio_budget" step="0.01" min="0" required><br><br>
+
+			<label for="newspaper_budget">Newspaper Ad Budget ($):</label>
+			<input type="number" name="newspaper_budget" step="0.01" min="0" required><br><br>
+
+			<input class = "submit-btn" type="submit" value="Predict Sales">
+		</form>
+	</div>
+	<div class = "prediction">	
+		<h2>Predicted Sales: {{ prediction }}</h2>
+		
+	</div>
+	<div class = "footer">	
+		<footer>
+			<p>Made by Sarvesh Thiagarajan: <span id="email">sarvesh.t2010@gmail.com</span></p>
+		</footer>
+	</div>
+</body>
+</html>
+
+
